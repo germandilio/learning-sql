@@ -1,0 +1,1 @@
+SELECT * FROM film WHERE NOT rating='R' AND NOT rating='PG';
