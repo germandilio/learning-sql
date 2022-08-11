@@ -1,0 +1,11 @@
+DROP TABLE IF EXISTS student;
+
+CREATE TABLE student(
+    id BIGSERIAL PRIMARY KEY,
+    username VARCHAR(50) UNIQUE NOT NULL,
+    age SMALLINT NOT NULL,
+    password VARCHAR(18) NOT NULL,
+    email VARCHAR(250) UNIQUE NOT NULL,
+    created_on TIMESTAMP NOT NULL,
+    last_login TIMESTAMP
+)
